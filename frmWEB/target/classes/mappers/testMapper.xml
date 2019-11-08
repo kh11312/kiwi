@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="test.user">
+		<select id="login"
+		parameterType="member"
+		resultType="member">
+			SELECT	ID, PWD, NAME, ADDRESS, POINT
+			FROM	CU_MEMBER
+			WHERE 	ID = #{id} AND PWD = #{pwd}
+		</select>
+</mapper>  
+
+
+
+
+
+
+
+
+
+
+
